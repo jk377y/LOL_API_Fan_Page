@@ -5,10 +5,11 @@ body{line-height: 1.5;}
 
 /* var() values for group coloring */
 :root {
-    --color1: white;
+    --color1: #0d1720;
     --color2: black;
+    --white: white;
     --borderColor: rgba(5, 5, 5, 0.993);
-    --bgColor: rgba(0, 0, 0, 0.562);
+    --bgColor: #0d1720;
     --windowColor: rgba(0, 0, 0, 0.459);
     --hover: rgb(255, 255, 0);
 }
@@ -30,7 +31,25 @@ body{line-height: 1.5;}
 /* ===== RESETS AND DEFAULTS ===== */
 
 body{background-color: #0d1720;}
-
+/* ===== Header ===== */
 .header {
-    
+    display: flex;
+    height: 25vh;
+    justify-content: center;
+    padding: 1.5em 0.5em 0.5em 0.5em;
+}
+
+/* ===== Nav Links ===== */
+.navbar {color: var(--white);}
+
+
+
+
+@media screen and (max-width: 30em) {
+    .header {
+        display: flex;
+        height: 15vh;
+        justify-content: center;
+        padding: 1.5em 0.5em 0.5em 0.5em;
+    }
 }
