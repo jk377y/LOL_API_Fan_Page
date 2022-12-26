@@ -1,13 +1,14 @@
 /* ===== RESETS AND DEFAULTS ===== */
 *,*::before,*::after{box-sizing: border-box;}
 *{margin: 0;padding: 0;}
-body{line-height: 1.5;}
+body{font-family: Friz Quadrata; line-height: 1.5; background-color: #0d1720;}
 
 /* var() values for group coloring */
 :root {
     --color1: #0d1720;
     --color2: black;
     --white: white;
+    --lolColor: linear-gradient(120deg, #c49e54, #a9813e, #dfd182, #caa959, #baa05b);
     --borderColor: rgba(5, 5, 5, 0.993);
     --bgColor: #0d1720;
     --windowColor: rgba(0, 0, 0, 0.459);
@@ -15,8 +16,8 @@ body{line-height: 1.5;}
 }
 
 /* link class - no text decoration after active or visited */
-.link:visited {text-decoration: none;}
-.link:active {text-decoration: none;}
+/* .link:visited {text-decoration: none;}
+.link:active {text-decoration: none;} */
 
 /* link class - color when hover over */
 .link:hover {color: var(--hover)}
@@ -28,9 +29,17 @@ body{line-height: 1.5;}
     border-radius: 40px;
 }
 
+h1{ color: white}
+
 /* ===== RESETS AND DEFAULTS ===== */
 
-body{background-color: #0d1720;}
+.lolText {
+    background: linear-gradient(120deg, #c49e54, #a9813e, #dfd182, #caa959, #baa05b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
 /* ===== Header ===== */
 .header {
     display: flex;

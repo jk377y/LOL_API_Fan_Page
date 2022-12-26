@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Friz Quadrata';
+    src: url(../css/fonts/Friz-Quadrata-Font/Friz\ Quadrata\ Regular.ttf);
+}
+@font-face {
+    font-family: 'Friz Quadrata';
+    src: url(../css/fonts/Friz-Quadrata-Font/Friz\ Quadrata\ Std\ Medium.otf);
+}
+@font-face {
+    font-family: 'Friz Quadrata';
+    src: url(../css/fonts/Friz-Quadrata-Font/Friz\ Quadrata\ Bold.otf);
+}
+@font-face {
+    font-family: 'Friz Quadrata';
+    src: url(../css/fonts/Friz-Quadrata-Font/Friz\ Quadrata\ Italic.ttf);
+}
