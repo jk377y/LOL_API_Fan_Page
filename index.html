@@ -11,18 +11,27 @@
 </head>
 <body>
     <header class="header">
-        <img src="/assets/images/LOL_logo.jpg" alt="league of legends api title image" srcset="">
+        <div class="container">
+            <H1 class="lolText">LEAGUE OF LEGENDS<span class="apiText">API</span></H1>
+            <button class="hamburger is-active">
+                <div class="bar"></div>
+            </button>
+        </div>
     </header>
-    <nav>
-        <ul class="navLinks">
-            <li id="link1"><a class="navbar lolText" href="./assets/html/champions.html">Champions</a></li>
-            <li id="link2"><a class="navbar lolText">Items</a></li>
-            <li id="link3"><a class="navbar lolText">Masteries</a></li>
-            <li id="link4"><a class="navbar lolText">Maps</a></li>
-            <li id="link5"><a class="navbar lolText">Tournaments</a></li>
-        </ul>
+    <nav class="navbar">
+        <a class="navLink lolText" href="./assets/html/champions.html">Champions</a>
+        <a class="navLink lolText">Items</a>
+        <a class="navLink lolText">Masteries</a>
+        <a class="navLink lolText">Maps</a>
+        <a class="navLink lolText">Tournaments</a>
     </nav>
-    
+    <nav class="mobileNav">
+        <a class="navLink" href="./assets/html/champions.html"><span class="lolText">Champions</span></a>
+        <a class="navLink">Items</a>
+        <a class="navLink">Masteries</a>
+        <a class="navLink">Maps</a>
+        <a class="navLink">Tournaments</a>
+    </nav>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
