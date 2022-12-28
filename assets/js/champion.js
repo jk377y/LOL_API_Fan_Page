@@ -20,9 +20,11 @@ fetch(leagueOfLegendsAPI)
     .then(response => response.json())
     .then(data => {
     let champArray = Object.keys(data.data)   // creates array of the first key values in the data response object
-    for(const champ of champArray) {
+    for(let i = 0; i < champArray.length; i++) {
+        let champIndex = champArray[i];      //  array of just champion names
+        let allChampObjects = data.data[champIndex];  // returns all 162 champion objects
         let {data: 
-                {[champ]: {
+                {[champIndex]: {
                     blurb,
                     id,
                     image: {full, group, sprite},
@@ -36,7 +38,8 @@ fetch(leagueOfLegendsAPI)
                 }}
                 
             } = data;   // fully destructures each champion 
-            console.log(data.data);
+            //console.log(allChampObjects);
+            
             //document.querySelector('#blurb').textContent = blurb
             //document.querySelector('#id').textContent = id  // sets value to zyra after the 162 loop
             //document.querySelector('#full').textContent = full
@@ -68,18 +71,21 @@ fetch(leagueOfLegendsAPI)
             // creates champion divs on thumbnail pics
             const gallery = document.querySelector('.gallery');
             const champDataDiv = document.createElement('div');
-
+            champDataDiv.setAttribute("id", id)
             let fullImage = "https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/" + id + ".png"
+            //console.log(this.id);
             const imgEl = document.createElement('img');
             imgEl.classList.add('thumbnail','thumbnail');
             imgEl.src = fullImage;
+            imgEl.setAttribute('title', name)
             champDataDiv.appendChild(imgEl);
             
+
             const pBlurbEl = document.createElement('p');
             pBlurbEl.textContent = blurb
             pBlurbEl.classList.add('white','blurb','hide');
             champDataDiv.appendChild(pBlurbEl);
-        
+            
             const pIdEl = document.createElement('p');
             pIdEl.textContent = id
             pIdEl.classList.add('white','id','hide');
@@ -199,9 +205,16 @@ fetch(leagueOfLegendsAPI)
             pTitleEl.textContent = title
             pTitleEl.classList.add('white','title','hide');
             champDataDiv.appendChild(pTitleEl);
-
+            // adds all champDataDivs to the gallery
             gallery.appendChild(champDataDiv);
-            //console.log(pBlurbEl);
-            
-        
-        }});
+            //console.log(champDataDiv);
+            // event listener for click on thumbnails
+            let allChampIds = champDataDiv.querySelectorAll('.id')
+            for (let i = 0; i < allChampIds.length; i++) {
+                allChampIds[i].addEventListener('click', function() {
+                    let id = this.querySelector('.id').textContent;
+                    console.log(id);
+                })
+            }console.log(allChampIds[i]);
+        }
+    });
