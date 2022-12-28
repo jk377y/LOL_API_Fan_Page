@@ -14,17 +14,15 @@ if (document.getElementById('hamburger').classList.contains("is-active")){
 });
 
 let leagueOfLegendsAPI = "http://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json"
-let leagueOfLegendsAPI2 = "http://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion/Aatrox.json"
+
 
 fetch(leagueOfLegendsAPI)
     .then(response => response.json())
     .then(data => {
     let champArray = Object.keys(data.data)   // creates array of the first key values in the data response object
-    for(let i = 0; i < champArray.length; i++) {
-        let champIndex = champArray[i];      //  array of just champion names
-        let allChampObjects = data.data[champIndex];  // returns all 162 champion objects
+    for(const champ of champArray) {
         let {data: 
-                {[champIndex]: {
+                {[champ]: {
                     blurb,
                     id,
                     image: {full, group, sprite},
@@ -38,47 +36,77 @@ fetch(leagueOfLegendsAPI)
                 }}
                 
             } = data;   // fully destructures each champion 
-            console.log(allChampObjects);    
-    }});
-
-
-    // let splashImage = (data.data[champIndex].image.full)
-    // let splashImageUrl = "http://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/"+splashImage
-    
-                // create element (thumbnail pics) with the for loop using append child
-            // use the click event on each thumbnail to provide input values into the champ api
-            // let arr = [
-            //     {
-            //         id: 1, 
-            //         name: 'John'
-            //     }, 
-            //     {
-            //         id: 2, 
-            //         name: 'Paul'
-            //     }, 
-            //     {
-            //         id: 3,
-            //         name: 'George'
-            //     }, 
-            //     {
-            //         id: 4, 
-            //         name: 'Ringo'
-            //     }];
-            //     for (let i = 0; i < arr.length; i++) {
-            //         let div = document.createElement('div');
-            //         div.innerHTML = '<p>' + arr[i].id + ': ' + arr[i].name + '</p>';
-            //         document.body.appendChild(div);
-            //       }
-
-            // To create an HTML element and append it to the DOM using a for loop, you can use the following steps:
-
-            // Use the document.createElement() method to create a new HTML element. For example, to create a div element:
-            // Copy code
-            // let div = document.createElement('div');
-            // Use the for loop to iterate over the array of objects. On each iteration, you can access the current object using the loop variable.
             
-            // Use the div.innerHTML property to set the content of the div element. You can use string concatenation to include the values from the current object in the element's content.
+            //document.querySelector('#blurb').textContent = blurb
+            //document.querySelector('#id').textContent = id  // sets value to zyra after the 162 loop
+            //document.querySelector('#full').textContent = full
+            // let fullPic = document.getElementById('pic');
             
-            // Use the appendChild() method to append the div element to the desired parent element.
+            // fullPic.src = fullImage
+            //console.log(full);
+            // document.querySelector('#group').textContent = group
+            // document.querySelector('#sprite').textContent = sprite
+            // document.querySelector('#attack').textContent = attack
+            // document.querySelector('#defense').textContent = defense
+            // document.querySelector('#difficulty').textContent = difficulty
+            // document.querySelector('#magic').textContent = magic
+            // document.querySelector('#key').textContent = key
+            // document.querySelector('#name').textContent = name
+            // document.querySelector('#partype').textContent = partype
+            // document.querySelector('#armor').textContent = armor
+            // document.querySelector('#attackdamage').textContent = attackdamage
+            // document.querySelector('#attackrange').textContent = attackrange
+            // document.querySelector('#attackspeed').textContent = attackspeed
+            // document.querySelector('#crit').textContent = crit
+            // document.querySelector('#hp').textContent = hp
+            // document.querySelector('#hpregen').textContent = hpregen
+            // document.querySelector('#movespeed').textContent = movespeed
+            // document.querySelector('#mp').textContent = mp
+            // document.querySelector('#mpregen').textContent = mpregen
+            // document.querySelector('#spellblock').textContent = spellblock
             
-            // Here's an example of how you could use this technique to create a div element for each object in an array and append it to the body element:
+            // creates champion divs on thumbnail pics
+            const gallery = document.querySelector('.gallery');
+            const champDataDiv = document.createElement('div');
+
+            let fullImage = "https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/" + id + ".png"
+            const imgEl = document.createElement('img');
+            imgEl.classList.add('thumbnail','thumbnail');
+            imgEl.src = fullImage;
+            champDataDiv.appendChild(imgEl);
+            
+            const pBlurbEl = document.createElement('p');
+            pBlurbEl.textContent = blurb
+            pBlurbEl.classList.add('white','blurb');
+            champDataDiv.appendChild(pBlurbEl);
+        
+            const pIdEl = document.createElement('p');
+            pIdEl.textContent = id
+            pIdEl.classList.add('white','id');
+            champDataDiv.appendChild(pIdEl);
+            
+            const pgroupEl = document.createElement('p');
+            pgroupEl.textContent = group
+            pgroupEl.classList.add('white','group');
+            champDataDiv.appendChild(pgroupEl);
+            
+            const pSpriteEl = document.createElement('p');
+            pSpriteEl.textContent = sprite
+            pSpriteEl.classList.add('white','sprite');
+            champDataDiv.appendChild(pSpriteEl);
+
+            const pAttackEl = document.createElement('p');
+            pAttackEl.textContent = attack
+            pAttackEl.classList.add('white','attack');
+            champDataDiv.appendChild(pAttackEl);
+            
+            const pDefenseEl = document.createElement('p');
+            pDefenseEl.textContent = defense
+            pDefenseEl.classList.add('white','defense');
+            champDataDiv.appendChild(pDefenseEl);
+
+            gallery.appendChild(champDataDiv);
+            //console.log(pBlurbEl);
+            
+        
+        }});

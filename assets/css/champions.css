@@ -189,3 +189,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+.hide {
+    display: none;
+    color: white;
+}
+.white  {
+    color: white;
+}
+.thumbnail {
+    /* display: none; */
+}

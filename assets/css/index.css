@@ -60,6 +60,7 @@ body {
     display: flex;
     justify-content: space-around;
     width: 90%;
+    max-width: 1040px;
     border: 1px solid var(--lolColor2);
     box-shadow: 2px 2px 7px 2px;
     border-radius: 15px;
@@ -145,43 +146,6 @@ body {
     color: #FFF;
     text-decoration: none;
 }
-/* when greater than 490px this happens*/
-@media screen and (min-width: 490px) {  
-    .title h1 {
-        font-size: 64px;
-    }
-    
-}
-/* when greater than 769px this happens */
-@media screen and (min-width: 769px){
-    .title h1 {
-        font-size: 80px;
-    }
-    .hamburger {
-        display: none;
-    }
-    .pcNav {
-        font-size: 18px;
-    }
-    .mobileNav {
-        display: none;
-    }
-}
-/* when less than 768px this happens*/
-@media screen and (max-width: 768px){
-    .navbar {
-        display: none;
-    }
-}
-/* when greater than 992px this happens*/
-@media screen and (min-width: 992px){
-    .title h1 {
-        font-size: 96px;
-    }
-    .pcNav {
-        font-size: 24px;
-    }
-}
 /* ***** === ^^^ Base HTML Styling ^^^ === ***** */
 #main{
     margin-top: 100px;
@@ -198,10 +162,18 @@ body {
     border-radius: 15px;
 }
 
+/* ===== MEDIA QUERIES ===== */
+
 /* when less than 500px this happens */
 @media screen and (max-width: 490px) {
     .mainPic {
         width: 300px;
+    }
+    .title h1 {
+        font-size: 48px;
+    }
+    .navbar {
+        display: none;
     }
 }
 /* when between 500px and 700px this happens */
@@ -209,15 +181,42 @@ body {
     .mainPic {
         width: 400px;
     }
+    .title h1 {
+        font-size: 64px;
+    }
+    .navbar {
+        display: none;
+    }
 }
 /* when between 700px and 1000px this happens*/
 @media screen and (min-width: 844px) and (max-width: 1000px) {
     .mainPic {
         width: 550px;
     }
+    .title h1 {
+        font-size: 80px;
+    }
+    .hamburger {
+        display: none;
+    }
+    .pcNav {
+        font-size: 18px;
+    }
+    .mobileNav {
+        display: none;
+    }
 }
 @media screen and (min-width: 1000px) {
     .mainPic {
         width: 800px;
+    }
+    .title h1 {
+        font-size: 96px;
+    }
+    .pcNav {
+        font-size: 24px;
+    }
+    .hamburger {
+        display: none;
     }
 }
