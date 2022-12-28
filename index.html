@@ -11,27 +11,34 @@
 </head>
 <body>
     <header class="header">
+        <div class="title">
+            <H1 class="lolText">LEAGUE OF LEGENDS<span class="apiText">&nbsp;&nbsp;API</span></H1>
+        </div>
         <div class="container">
-            <H1 class="lolText">LEAGUE OF LEGENDS<span class="apiText">API</span></H1>
-            <button class="hamburger is-active">
+            <button id="hamburger" class="hamburger">
                 <div class="bar"></div>
             </button>
         </div>
+        <nav class="navbar">
+            <a class="navLink pcNav lolText" href="/index.html">Home</></a>
+            <a class="navLink pcNav lolText" href="./assets/html/champions.html">Champions</a>
+            <a class="navLink pcNav lolText" href="./assets/html/items.html">Items</a>
+            <a class="navLink pcNav lolText" href="./assets/html/maps.html">Maps</a>
+            <a class="navLink pcNav lolText" href="./assets/html/tournaments.html">Tournaments</a>
+        </nav>
     </header>
-    <nav class="navbar">
-        <a class="navLink lolText" href="./assets/html/champions.html">Champions</a>
-        <a class="navLink lolText">Items</a>
-        <a class="navLink lolText">Masteries</a>
-        <a class="navLink lolText">Maps</a>
-        <a class="navLink lolText">Tournaments</a>
-    </nav>
     <nav class="mobileNav">
-        <a class="navLink" href="./assets/html/champions.html"><span class="lolText">Champions</span></a>
-        <a class="navLink">Items</a>
-        <a class="navLink">Masteries</a>
-        <a class="navLink">Maps</a>
-        <a class="navLink">Tournaments</a>
+        <a href="./index.html"><span class="navLink lolText">Home</span></a>
+        <a href="./assets/html/champions.html"><span class="navLink lolText">Champions</span></a>
+        <a href="./assets/html/items.html"><span class="navLink lolText">Items</span></a>
+        <a href="./assets/html/maps.html"><span class="navLink lolText">Maps</span></a>
+        <a href="./assets/html/tournaments.html"><span class="navLink lolText">Tournaments</span></a>
     </nav>
-    <script src="./assets/js/script.js"></script>
+    <section id="main">
+        <div class="mainDiv">
+            <img class="mainPic" src="/assets/images/index/LeagueofLegends_Worlds2019_ParisFrance.jpg" alt="">
+        </div>
+    </section>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>

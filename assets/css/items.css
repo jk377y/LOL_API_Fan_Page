@@ -183,41 +183,9 @@ body {
     }
 }
 /* ***** === ^^^ Base HTML Styling ^^^ === ***** */
-#main{
-    margin-top: 100px;
+.main{
     display: flex;
-    width: 100%;
+    height: 600px;
     justify-content: center;
     align-items: center;
-}
-.mainPic{
-    width: 800px;
-    padding: 0px;
-    border: 2px solid var(--lolColor2);
-    box-shadow: 2px 2px 7px 2px;
-    border-radius: 15px;
-}
-
-/* when less than 500px this happens */
-@media screen and (max-width: 490px) {
-    .mainPic {
-        width: 300px;
-    }
-}
-/* when between 500px and 700px this happens */
-@media screen and (min-width: 490px) and (max-width: 843px) {
-    .mainPic {
-        width: 400px;
-    }
-}
-/* when between 700px and 1000px this happens*/
-@media screen and (min-width: 844px) and (max-width: 1000px) {
-    .mainPic {
-        width: 550px;
-    }
-}
-@media screen and (min-width: 1000px) {
-    .mainPic {
-        width: 800px;
-    }
 }
