@@ -330,6 +330,11 @@ body {
         width: 300px;
         margin-top: 30px;
     }
+    .thumbnail {
+        height: 48px;
+        width: 48px;
+    }
+
 }
 /* when greater than 1000px this happens */
 @media screen and (min-width: 1000px) {
@@ -361,5 +366,10 @@ body {
         width: 31%;
         max-width: 300px;
         margin-left: 3%;
+    }
+    .thumbnail {
+        height: 56px;
+        width: 56px;
+        box-shadow: 2px 2px 5px 2px;
     }
 }
