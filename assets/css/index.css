@@ -161,7 +161,9 @@ body {
     box-shadow: 2px 2px 7px 2px;
     border-radius: 15px;
 }
-
+h1 {
+    text-align: center;
+}
 /* ===== MEDIA QUERIES ===== */
 
 /* when less than 500px this happens */
