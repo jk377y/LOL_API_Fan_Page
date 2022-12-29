@@ -187,6 +187,7 @@ body {
 #main{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     height: auto;
     width: 100%;
     margin-top: 50px;
@@ -219,4 +220,12 @@ body {
 }
 .green {
     background-color: green;
+}
+.champDisplay {
+    display: flex;
+    flex-direction: row;
+}
+.statBg {
+    background-color: var(--lolColor2);
+    color: black;
 }
