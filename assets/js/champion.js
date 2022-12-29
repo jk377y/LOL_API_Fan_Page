@@ -79,7 +79,6 @@ fetch(leagueOfLegendsAPI)
                 document.querySelector('#mp').textContent = mp
                 document.querySelector('#mpregen').textContent = mpregen
                 document.querySelector('#spellblock').textContent = spellblock
-                console.log(name);
                 // the .champDisplay window is hidden on initial page load, this will make it visible when a thumbnail is clicked
                 let champDisplay = document.querySelector('.champDisplay');
                 champDisplay.style.display = 'flex';
