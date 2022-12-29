@@ -186,31 +186,30 @@ body {
 /* ***** === ^^^ Base HTML Styling ^^^ === ***** */
 #main{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
     height: auto;
     width: 100%;
     margin-top: 50px;
 }
 .hide {
     display: none;
-    color: white;
 }
 .white  {
-    color: white;
+    color: var(--lolColor2);
+    font-size: 20px;
 }
 .thumbnail {
-    /* display: none; */
-    height: 64px;
-    width: 64px;
-    opacity: 1;
-    margin: 2px;
+    height: 36px;
+    width: 36px;
+    opacity: 0.8;
+    box-shadow: 1px 1px 5px 1px;
 }
 .thumbnail:hover {
     opacity: 1.0;
-    border: 3px solid var(--lolColor2);
-    box-shadow: 2px 2px 7px 2px;
+    border: 2px solid var(--lolColor2);
     border-radius: 50%;
+    transform:scale(1.75);
 }
 .gallery {
     display: flex;
@@ -218,14 +217,73 @@ body {
     flex-wrap: wrap;
     width: 80%;
 }
-.green {
-    background-color: green;
+.gallery div {
+    margin: 3px;
+}
+.gallery div:hover {
+    z-index: 100;
 }
 .champDisplay {
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+.champBio {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    
+}
+.bioText {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    text-align: justify;
+    height: 100%;
+}
+.nameText {
+    font-size: 42px;
+    text-align: center;
+}
+.statWindow {
+    width: 33%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.stats {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 50px;
 }
-.statBg {
-    background-color: var(--lolColor2);
-    color: black;
+.catagory {
+    font-size: 21px;
+}
+.nameTitle {
+    display: flex;
+    height: 33%;
+    flex-direction: column;
+}
+.blurbText {
+    display: flex;
+    height: 66%;
+}
+/* when greater than 490px this happens*/
+@media screen and (min-width: 490px) {  
+    
+}
+/* when greater than 769px this happens */
+@media screen and (min-width: 769px){
+    
+}
+/* when less than 768px this happens*/
+@media screen and (max-width: 768px){
+    
+}
+/* when greater than 992px this happens*/
+@media screen and (min-width: 992px){
+    
 }

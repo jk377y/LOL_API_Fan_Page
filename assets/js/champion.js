@@ -58,6 +58,7 @@ fetch(leagueOfLegendsAPI)
             // sets event listener on each thumbnail hover click and places the object key values into the corresponding IDs on the html page
             champDataDiv.addEventListener('click', function(){
                 document.querySelector('#champPic').src = splashImg
+                document.querySelector('#champPic').title = name
                 document.querySelector('#name').textContent = name
                 document.querySelector('#title').textContent = title
                 document.querySelector('#blurb').textContent = blurb
@@ -78,6 +79,9 @@ fetch(leagueOfLegendsAPI)
                 document.querySelector('#mp').textContent = mp
                 document.querySelector('#mpregen').textContent = mpregen
                 document.querySelector('#spellblock').textContent = spellblock
+                // the .champDisplay window is hidden on initial page load, this will make it visible when a thumbnail is clicked
+                let champDisplay = document.querySelector('.champDisplay');
+                champDisplay.style.display = 'flex';
             })
         }   
     });
