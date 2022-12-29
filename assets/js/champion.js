@@ -16,7 +16,7 @@ if (document.getElementById('hamburger').classList.contains("is-active")){
 });
 
 // this is the api we will be pulling from
-let leagueOfLegendsAPI = "http://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json"
+let leagueOfLegendsAPI = "https://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json"
 // grabbing object containing ALL champion data from api
 fetch(leagueOfLegendsAPI)
     .then(response => response.json())
@@ -79,6 +79,7 @@ fetch(leagueOfLegendsAPI)
                 document.querySelector('#mp').textContent = mp
                 document.querySelector('#mpregen').textContent = mpregen
                 document.querySelector('#spellblock').textContent = spellblock
+                console.log(name);
                 // the .champDisplay window is hidden on initial page load, this will make it visible when a thumbnail is clicked
                 let champDisplay = document.querySelector('.champDisplay');
                 champDisplay.style.display = 'flex';
