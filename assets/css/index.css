@@ -157,8 +157,8 @@ body {
     margin-bottom: 100px;
 }
 .mainPic{
-    max-width: 80%;
-    max-height: 75%;
+    max-width: 60%;
+    max-height: 50%;
     padding: 0px;
     border: 2px solid var(--lolColor2);
     box-shadow: 2px 2px 7px 2px;
