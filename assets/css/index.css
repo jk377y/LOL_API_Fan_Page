@@ -157,6 +157,7 @@ body {
 }
 .mainPic{
     max-width: 80%;
+    max-height: 75%;
     padding: 0px;
     border: 2px solid var(--lolColor2);
     box-shadow: 2px 2px 7px 2px;
