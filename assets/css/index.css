@@ -147,19 +147,22 @@ body {
     text-decoration: none;
 }
 /* ***** === ^^^ Base HTML Styling ^^^ === ***** */
-#main{
+.main{
     margin-top: 100px;
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .mainPic{
-    width: 800px;
+    max-width: 80%;
     padding: 0px;
     border: 2px solid var(--lolColor2);
     box-shadow: 2px 2px 7px 2px;
     border-radius: 15px;
+    width: auto;
+    height: auto;
 }
 h1 {
     text-align: center;

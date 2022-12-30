@@ -184,9 +184,17 @@ body {
     }
 }
 /* ***** === ^^^ Base HTML Styling ^^^ === ***** */
+
 .main{
     display: flex;
-    height: 600px;
+    max-width: 100%;
     justify-content: center;
-    align-items: center;
+    margin-top: 50px;
 }
+.main img {
+    max-width: 90%;
+    height: auto;
+    width: auto;
+    z-index: -2;
+}
+

@@ -238,6 +238,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     width: 85%;
+    max-width: 1184px;
 }
 .gallery div {
     margin: 3px;

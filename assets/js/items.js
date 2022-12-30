@@ -7,8 +7,8 @@ const menuBtn = document.querySelector('.hamburger');
 
 document.getElementById('hamburger').addEventListener('click', function (){
 if (document.getElementById('hamburger').classList.contains("is-active")){
-    document.getElementById('main').style.display = "none";
+    document.querySelector('.main').style.display = "none";
 } else {
-    document.getElementById('main').style.display = "flex";
+    document.querySelector('.main').style.display = "flex";
 }
 });
