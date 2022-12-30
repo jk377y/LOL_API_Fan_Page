@@ -171,9 +171,6 @@ h1 {
 
 /* when less than 500px this happens */
 @media screen and (max-width: 490px) {
-    .mainPic {
-        width: 300px;
-    }
     .title h1 {
         font-size: 48px;
     }
@@ -183,9 +180,6 @@ h1 {
 }
 /* when between 500px and 700px this happens */
 @media screen and (min-width: 490px) and (max-width: 843px) {
-    .mainPic {
-        width: 400px;
-    }
     .title h1 {
         font-size: 64px;
     }
@@ -195,9 +189,6 @@ h1 {
 }
 /* when between 700px and 1000px this happens*/
 @media screen and (min-width: 844px) and (max-width: 1000px) {
-    .mainPic {
-        width: 550px;
-    }
     .title h1 {
         font-size: 80px;
     }
@@ -212,9 +203,6 @@ h1 {
     }
 }
 @media screen and (min-width: 1000px) {
-    .mainPic {
-        width: 800px;
-    }
     .title h1 {
         font-size: 96px;
     }
