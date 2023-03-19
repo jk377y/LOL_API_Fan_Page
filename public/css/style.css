@@ -47,6 +47,23 @@ main {
 }
 header {
     height: auto;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: end; */
+}
+.navLinks {
+    text-decoration: none;
+    margin-left: 20px;
+    list-style: none;
+    color: rgba(200, 156, 60, 0.72);
+    font-size: 1vw;
+}
+.navLinks a:link, .navLinks a:visited {
+    text-decoration: none;
+    color: rgba(200, 156, 60, 0.72);
+}
+.navLinks a:hover {
+    color: rgb(200, 156, 60);
 }
 .titleImage {
     width: 33%;
@@ -99,6 +116,7 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     width: 80%;
+    margin-top: 20px;
 }
 .gallery div {
     margin: 3px;
@@ -110,12 +128,15 @@ header {
     height: 56px;
     width: 56px;
     opacity: 0.8;
-    box-shadow: 1px 1px 3px 1px;
+    box-shadow: 1px 1px 3px 1px black;
     border-radius: 10%;
+    object-fit: cover; 
+    object-position: top;
 }
 .thumbnail:hover {
     opacity: 1.0;
     border: 2px solid var(--lolColor2);
+    box-shadow: 1px 1px 3px 1px var(--lolColor2);
     border-radius: 50%;
     transform:scale(1.75);
 }

@@ -19,14 +19,14 @@ const sess = {
 		db: sequelize, // The db property tells SequelizeStore to use the sequelize connection we created earlier
 	}),
 }
-app.use(routes); // Use the routes we imported earlier with the express server
+
 app.use(session(sess)); // Use the session object we created earlier with express-session
 app.engine('handlebars', hbs.engine); // Use the express-handlebars object we created earlier with the express server
 app.set('view engine', 'handlebars'); // Set the view engine to be used by the server to handlebars
 app.use(express.json()); // Use the express.json() method to parse incoming JSON data
 app.use(express.urlencoded({ extended: true })); // Use the express.urlencoded() method to parse incoming URL-encoded data
 app.use(express.static(path.join(__dirname, 'public'))); // Use the express.static() method to serve static files such as images, CSS files, and JavaScript files
-
+app.use(routes); // Use the routes we imported earlier with the express server
 
 
 
