@@ -1,0 +1,12 @@
+.header-wrapper {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    /* background-color: var(--windowColor); */
+    z-index: 1;
+}
+.titleImage {
+    height: 100%;
+}
+

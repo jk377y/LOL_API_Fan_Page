@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color1: #0d1720;
+    --color2: black;
+    --white: white;
+    --lolColor: linear-gradient(120deg, #c49e54, #a9813e, #dfd182, #caa959, #baa05b);
+    --lolColor2: #2dfcfb;
+    --borderColor: rgba(5, 5, 5, 0.582);
+    --bgColor: #0d1720;
+    --windowColor: rgba(0, 0, 0, 0.575);
+    --hover: rgb(255, 255, 0);
+    --textColor: rgba(142, 204, 136, 0.856);
+    --logintitle: rgb(205, 250, 250);
+    --loginborder: #c89b3c;
+}
+body {
+    font-family: Friz Quadrata;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/images/lolBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+}
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--windowColor);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

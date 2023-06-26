@@ -1,0 +1,54 @@
+.champ-wrapper {
+    height: 100%;
+    min-height: 85vh;
+}
+.champ-gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.champ-title {
+    margin: 3rem 0;
+    background: linear-gradient(120deg, #c49e54, #a9813e, #dfd182, #caa959, #baa05b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    place-self: center;
+}
+.champ-gallery {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	width: 70%;
+    gap: 10px;
+}
+.champ-avatar-frame {
+    height: 48px;
+	width: 48px;
+
+}
+.champ-avatar-frame:hover {
+    z-index: 100;
+}
+.thumbnail {
+	width: 100%;
+    height: 100%;
+	opacity: 0.8;
+	box-shadow: 1px 1px 3px 1px black;
+	border-radius: 10%;
+	object-fit: cover;
+	object-position: top;
+}
+.thumbnail:hover {
+	opacity: 1;
+	border: 2px solid var(--lolColor2);
+	box-shadow: 1px 1px 3px 1px var(--lolColor2);
+	border-radius: 50%;
+	transform: scale(1.5);
+}
+.hide {
+    display: none;
+}

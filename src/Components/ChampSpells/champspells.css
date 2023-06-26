@@ -1,0 +1,32 @@
+.spell-title {
+    background: linear-gradient(120deg, #c49e54, #a9813e, #dfd182, #caa959, #baa05b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.spell-passive, .spell-each-spell {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;   
+}
+.spell-passive-desc-wrapper, .spell-each-spell-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.spell-passive-desc-wrapper img, .spell-each-spell-wrapper img {
+    border: 1px solid var(--borderColor);
+    box-shadow: 0 0 10px 3px black;
+    border-radius: 15px;
+}
+.spell-label {
+    background: linear-gradient(120deg, #c49e54, #a9813e, #dfd182, #caa959, #baa05b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.spell-desc {
+    color: #00b9a1de;
+}

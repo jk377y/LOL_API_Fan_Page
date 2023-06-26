@@ -1,0 +1,17 @@
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 0 0 0.7rem 3rem;
+}
+.navLinks {
+    text-decoration: none;
+    color: rgba(200, 156, 60, 0.72);
+    font-size: 1.2rem;
+}
+.navLinks:link, .navLinks:visited {
+    text-decoration: none;
+}
+.navLinks:hover {
+    color: #c89c3c;
+}

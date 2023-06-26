@@ -1,0 +1,61 @@
+.champ-skins-wrapper {
+    text-align: center;
+    background-color: var(--windowColor);
+    padding: 1.5rem;
+    border: 1px solid var(--borderColor);
+    box-shadow: 0 0 10px 3px black;
+    border-radius: 15px;
+}
+.champ-skins-name {
+    background: linear-gradient(120deg, #c49e54, #a9813e, #dfd182, #caa959, #baa05b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.champ-skins-frame {
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.champ-skin-nav-button {
+    font-size: 3rem;
+    background-color: #061e1d;
+    border-radius: 15px;
+    padding: 0 10px;
+    background: linear-gradient(120deg, #c49e54, #a9813e, #dfd182, #caa959, #baa05b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.champ-skin-nav-button:hover {
+    font-size: 3rem;
+    background-color: #061e1d;
+    box-shadow: 0 0 15px 3px #00b9a1de;
+}
+.champ-skin-nav-button:active {
+    border: 2px solid var(--borderColor);
+}
+.champ-skins-img {
+    width: 200px;
+    border: 1px solid var(--borderColor);
+    box-shadow: 0 0 10px black;
+    border-radius: 15px;
+}
+.champ-stats {
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}
+.champ-stats-label {
+    color: #baa05b;
+    display: flex;
+    justify-content: space-between;
+}
+.champ-stats-value {
+    font-size: 1.2rem !important;
+    color: #00b9a1de !important;
+}

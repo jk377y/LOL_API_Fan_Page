@@ -1,0 +1,11 @@
+.home-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+.home-wrapper > iframe {
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px 3px black;
+}
