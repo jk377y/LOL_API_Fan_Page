@@ -9,7 +9,7 @@ function Champions() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://ddragon.leagueoflegends.com/cdn/13.12.1/data/en_US/champion.json');
+                const response = await fetch('https://ddragon.leagueoflegends.com/cdn/13.12.1/data/en_US/champion.json');
                 const data = await response.json();
                 setChampions(data);
             } catch (error) {
@@ -21,7 +21,7 @@ function Champions() {
 
     const handleChampionClick = async (championId) => {
         try {
-            const response = await fetch(`http://ddragon.leagueoflegends.com/cdn/13.12.1/data/en_US/champion/${championId}.json`);
+            const response = await fetch(`https://ddragon.leagueoflegends.com/cdn/13.12.1/data/en_US/champion/${championId}.json`);
             const data = await response.json();
             setSelectedChampion(data.data[championId]);
             setShowSpotlight(true);
