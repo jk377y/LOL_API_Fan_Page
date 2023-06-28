@@ -9,7 +9,7 @@ const ChampSpells = ({ champion }) => {
             <div className="spell-passive" key={passive.name}>
                 <p className='spell-label'>{passive.name}</p>
                 <div className="spell-passive-desc-wrapper">
-                    <img src={`https://ddragon.leagueoflegends.com/cdn/13.12.1/img/passive/${passive.image.full}`} alt={passive.name} />
+                    <img className="spell-icon" src={`https://ddragon.leagueoflegends.com/cdn/13.12.1/img/passive/${passive.image.full}`} alt={passive.name} />
                     <p className='spell-desc'>{passive.description}</p>
                 </div>
             </div>
@@ -18,7 +18,7 @@ const ChampSpells = ({ champion }) => {
                 <div className="spell-each-spell" key={spell.name}>
                     <p className='spell-label'>{spell.name}</p>
                     <div className="spell-each-spell-wrapper">
-                        <img src={`https://ddragon.leagueoflegends.com/cdn/13.12.1/img/spell/${spell.image.full}`} alt={spell.name} />
+                        <img className="spell-icon" src={`https://ddragon.leagueoflegends.com/cdn/13.12.1/img/spell/${spell.image.full}`} alt={spell.name} />
                         <p className='spell-desc'>{spell.description}</p>
                     </div>
                 </div>

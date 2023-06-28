@@ -30,3 +30,10 @@
 .spell-desc {
     color: #00b9a1de;
 }
+.spell-icon {
+    transition: all 0.3s ease-in-out;
+}
+.spell-icon:hover {
+    /* transform: scale(1.1); */
+    box-shadow: 0 0 15px 3px #00b9a1de;
+}
