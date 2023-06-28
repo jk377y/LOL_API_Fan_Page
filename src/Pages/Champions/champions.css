@@ -38,9 +38,8 @@
     height: 100%;
 	opacity: 0.8;
 	box-shadow: 1px 1px 3px 1px black;
-	border-radius: 10%;
-	object-fit: cover;
-	object-position: top;
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
 }
 .thumbnail:hover {
 	opacity: 1;
