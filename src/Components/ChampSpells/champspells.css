@@ -20,7 +20,7 @@
 .spell-passive-desc-wrapper img, .spell-each-spell-wrapper img {
     border: 1px solid var(--borderColor);
     box-shadow: 0 0 10px 3px black;
-    border-radius: 15px;
+    border-radius: 50%;
 }
 .spell-label {
     background: linear-gradient(120deg, #c49e54, #a9813e, #dfd182, #caa959, #baa05b);
@@ -28,12 +28,18 @@
     -webkit-background-clip: text;
 }
 .spell-desc {
-    color: #00b9a1de;
+    color: #00b9a09d;
+    transition: all 0.3s ease-in-out; 
+}
+.spell-desc:hover {
+    color: #00b9a0;
 }
 .spell-icon {
     transition: all 0.3s ease-in-out;
 }
 .spell-icon:hover {
-    /* transform: scale(1.1); */
     box-shadow: 0 0 15px 3px #00b9a1de;
+}
+.spell-icon:hover ~ .spell-desc {
+    color: #00b9a0;
 }

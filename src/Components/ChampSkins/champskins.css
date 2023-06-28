@@ -27,6 +27,7 @@
     background: linear-gradient(120deg, #c49e54, #a9813e, #dfd182, #caa959, #baa05b);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    transition: all 0.3s ease-in-out;
 }
 .champ-skin-nav-button:hover {
     font-size: 3rem;
@@ -57,5 +58,5 @@
 }
 .champ-stats-value {
     font-size: 1.2rem !important;
-    color: #00b9a1de !important;
+    color: #00b9a0 !important;
 }
